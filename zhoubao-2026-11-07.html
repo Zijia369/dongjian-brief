@@ -1,0 +1,88 @@
+<!doctype html><html lang=zh><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1,viewport-fit=cover'><meta name=theme-color content='#0b0614'><title>洞见星空周报 11月7日</title><style>
+:root{--bg:#0b0614;--bg2:#140b22;--card:#171021;--line:#2b1d3e;--acc:#c4b5fd;--gold:#c9a86a;--txt:#efeaf8;--dim:#a79fbb;--mut:#6f6784}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(900px 500px at 50% -160px,#2a1745 0%,var(--bg) 62%);
+color:var(--txt);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC",sans-serif;
+max-width:520px;margin:0 auto;padding:26px 18px 70px;background-attachment:fixed}
+.grid{position:fixed;inset:0;pointer-events:none;opacity:.045;
+background-image:linear-gradient(#c4b5fd 1px,transparent 1px),linear-gradient(90deg,#c4b5fd 1px,transparent 1px);
+background-size:44px 44px;z-index:0}
+.wrap{position:relative;z-index:1}
+.head{display:flex;align-items:center;gap:12px}
+.logo{width:46px;height:46px;border-radius:12px;object-fit:cover}
+.insight{margin-top:9px;padding:9px 12px;border-left:3px solid var(--gold);background:rgba(201,168,106,.05);border-radius:0 10px 10px 0;font-size:13.5px;color:#c9b8ff}
+.insight b,.insight .tag{color:var(--acc);font-weight:600}
+.term{display:flex;gap:10px;padding:12px 0;border-bottom:1px solid #241834}
+.term:last-child{border-bottom:none}
+.term .k{color:var(--gold);font-weight:600;white-space:nowrap}
+.term .v{color:#d8d0ea;font-size:13.5px}
+.kicker{font:600 11px/1 ui-monospace,SFMono-Regular,monospace;letter-spacing:4px;color:var(--gold);margin-bottom:14px}
+h1{font-size:30px;line-height:1.3;font-weight:800;letter-spacing:-.5px;
+background:linear-gradient(100deg,#fff,#c4b5fd 70%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--dim);font-size:13px;margin-top:8px}
+.lead{margin:18px 0 4px;padding:14px 16px;border:1px solid var(--line);border-radius:16px;
+background:linear-gradient(180deg,#1a1129,#120b1e);color:#cfc7e2;font-size:14px}
+h2{display:flex;align-items:center;gap:10px;font:600 11px/1 ui-monospace,monospace;
+letter-spacing:3px;color:var(--gold);margin:38px 0 16px}
+h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent)}
+.card{background:var(--card);border:1px solid rgba(201,168,106,.30);border-radius:18px;padding:17px 16px;margin-bottom:12px;
+box-shadow:0 1px 0 rgba(255,255,255,.03) inset}
+.card h3{font-size:17px;line-height:1.55;font-weight:650;margin-bottom:9px}
+.card p{color:#b9b2c9;font-size:14.5px}
+.why{margin-top:11px;padding:9px 12px;border-left:3px solid var(--gold);
+background:rgba(201,168,106,.08);border-radius:0 10px 10px 0;font-size:14px;color:#f2e56b}
+.why .tag{color:var(--gold);font-weight:600}
+.src-chip{font:600 10px/1 ui-monospace,SFMono-Regular,monospace;color:var(--gold);border:1px solid rgba(201,168,106,.55);border-radius:999px;padding:3px 7px;margin-left:6px;text-decoration:none;white-space:nowrap;vertical-align:middle}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.chip{font:600 11px/1 ui-monospace,monospace;color:var(--mut);border:1px solid var(--line);
+border-radius:999px;padding:5px 9px;text-decoration:none}
+.chip.acc{color:var(--gold);border-color:rgba(201,168,106,.35)}
+a.chip:active{background:rgba(196,181,253,.12)}
+a{color:#b9a6ff;text-decoration:none}
+.repo{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid #241834}
+.repo:last-child{border-bottom:none}
+.repo .n{font-size:14.5px;font-weight:600;color:#efeaf8;word-break:break-all}
+.repo .d{font-size:12.5px;color:var(--dim);margin-top:3px;line-height:1.5}
+.repo .s{font:600 12px ui-monospace,monospace;color:var(--gold);white-space:nowrap}
+.money{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid #241834;font-size:14.5px}
+.money:last-child{border-bottom:none}
+.money b{color:var(--acc);font-variant-numeric:tabular-nums}
+.money span{color:var(--dim);font-size:12.5px}
+.todo li{list-style:none;padding:12px 0;border-bottom:1px solid #241834;font-size:14.5px;color:#cfc7e2}
+.todo li:last-child{border-bottom:none}
+.todo .d{display:inline-block;font:600 11px/1 ui-monospace,monospace;color:var(--acc);margin-right:8px}
+.teach{margin-top:10px;padding:10px 12px;border:1px dashed rgba(196,181,253,.35);border-radius:12px;font-size:13.5px;color:#d6ccf0}
+.teach .tag{color:var(--acc);font-weight:600}
+.teach b{color:#c4b5fd;font-weight:600}
+.foot{margin-top:44px;text-align:center;color:#5d5570;font-size:11px;letter-spacing:1.5px}
+
+.article p{margin:0 0 20px;font-size:17px;line-height:1.95;color:#d9d2e8}
+.article h2{margin:34px 0 14px;font-size:20px;color:#f0d98a;border-left:4px solid #d4af37;padding-left:12px}
+.article ul{margin:0 0 20px 22px}
+.article li{margin-bottom:10px;font-size:17px;line-height:1.9;color:#d9d2e8}
+</style></head><body><div class=grid></div><div class=wrap><div class=kicker>DONGJIAN · WEEKLY</div><div class=head><img class=logo src='logo.png' alt=logo><h1>洞见星空早报</h1></div><div class=sub>2026-11-04 至 2026-11-07 · 周报 · 68 条</div><div class=article><p>这一周，AI世界同时踩了刹车和油门。</p>
+<p>11月6日，美国中期选举结果落地。民主党高层公开呼吁“立即暂停全国数据中心建设”，理由指向AI产业扩张带来的电力与资源压力；民主党同时推动《禁止人工智能法案》，美国芯片股随之重挫，纳斯达克单日暴跌5.52%。同一天，中国移动在2026移动网络大会上宣布，2027年算力投资超过1000亿元，未来两年智算能力连续翻番；中际旭创公告，主要客户订单已基本覆盖2027年全年，部分重点客户已给出2028年明确需求指引。还是同一天，OpenAI总裁公开表示公司已经为明年上市做好准备，Anthropic在IPO路演里主推的不是参数规模，是Claude的芯片设计能力。</p>
+<p>一边踩刹车，一边踩油门。</p>
+<p>我的总判断是：这一周真正发生的事，是AI的定价权从“讲模型故事的人”手里，转移到了“算账的人”手里。算账的人有三类——买债的人、管电和管地的人、掏钱采购的人。过去两年，AI公司用参数规模和一級市场估值讲叙事；这一周，这三类人同时开始提问：你的电从哪来，你的收入能不能覆盖折旧，你的模型能不能真的交付一件专业活。</p>
+<p>这个判断有前提。如果《禁止人工智能法案》只是选举语言、进不了立法程序，如果数据中心的电力约束最终被新增天然气和核电供给化解，那么这次下杀只是一次情绪性回调，估值会重新修复。但如果监管真的落到数据中心的审批环节，如果AI资本开支真的从股权融资转向债权融资，那么整个行业的成本曲线会被永久性抬高一档。现在，已经能看到后者的证据。</p>
+<p>先看钱怎么看AI。</p>
+<p>一级市场这边，OpenAI总裁表态公司已为明年上市做好准备，这是高层首次就上市时间表给出相对明确的说法。Anthropic的动作更值得琢磨：它在上市前向IPO投资者重点推介Claude的芯片设计能力，把它当作差异化卖点。芯片设计是AI落地中价值密度最高的专业场景之一。两家公司不约而同地把“我们能干一件具体的、值钱的专业活”摆到台前，而不是“我们的模型有多少参数”。这说明大模型公司的估值叙事，正从参数规模转向垂直工程能力。</p>
+<p>同一条线上还有两个不那么显眼、但更能说明资金性质变化的信号。Sand.ai宣布完成2亿美元A+轮融资，10个月内累计融资3亿美元，本轮之后跻身独角兽。融资节奏在当下的资本环境里相当少见。DeepSeek融资中最低调的一笔是16.5亿元，出资方是一批浙江实业家。一个拿的是风险资本，一个拿的是产业资本，两种钱的性质完全不同：前者买的是增长曲线，后者买的是产业链位置。国产大模型的资金来源，正在从财务投资人转向产业资本。这意味着耐心变长了，但对商业化的要求也变具体了。</p>
+<p>二级市场这边，摩根大通给美图上调评级至增持，但同时强调“AI收入有代价”，投资者应关注利润转化。这句话的分量比评级本身重。它意味着市场开始用利润率而不是营收增速给AI应用公司定价。Canva因AI产品落地遇挫启动裁员，是同一枚硬币的另一面：把AI塞进现有产品，并不必然带来付费增长。工具型公司的AI功能与商业模式之间，存在真实的落差。人形机器人公司Agility完成上市这件事也有意思，钛媒体的观察是行业估值尺子不止一把，不同公司用的是完全不同的标准。标准不统一，本身就是行业还没进入成熟定价阶段的标志。</p>
+<p>采购端的变化最安静，也最扎实。领英替换部分OpenAI模型，维持服务器成本持平。这个动作很小，信号很强：企业在大模型采购上开始多供应商比价，用切换来控成本。模型层的可替代性在上升。</p>
+<p>三条新闻放在一起，是同一件事的三个切面：一级市场卖“专业交付”，二级市场看“利润转化”，采购端比“单位成本”。三个环节同时从能力崇拜转向成本审查。</p>
+<p>多数人在这里看错了。他们以为这是AI泡沫破裂。不是。这是定价基准的更换。被抛弃的是“高估值、无现金流、靠叙事支撑”的资产；被重新定价的是“订单可见、成本可算、场景具体”的资产。同一天中际旭创说订单覆盖2027年全年、中国移动说千亿级算力投资，就是后者的注脚。泡沫论者只盯着纳斯达克那5.52%，没看订单簿。</p>
+<p>一到三年会怎样？我倾向于认为，AI公司的估值会分成两层：一层是能拿出可审计的专业交付收入的公司，享受工程能力溢价；一层是只有调用量和日活的公司，被按传统软件甚至按流量生意估值。中间地带会消失。这个判断成立的条件是：企业采购方的多供应商比价成为常态，且模型切换的迁移成本继续下降。领英的案例说明，迁移成本已经不高了。</p>
+<p>再看算力的政治成本。</p>
+<p>美国这一周的动作很密集。民主党高层呼吁暂停全国数据中心建设；《禁止人工智能法案》被推动；微软被曝对押注“新云”渐生悔意，正加强审查部分数据中心项目；OpenAI承诺公布数据中心用水量，并委托独立噪音研究。这些事指向同一个方向：AI基础设施的扩张，开始被重新算账。算的不是技术账，是电、水、噪音、社区和选票的账。</p>
+<p>有一个细节容易被忽略：有分析称，美国数据中心建设面临阻力，这种阻力反倒有助于降低人工智能泡沫风险。这话说得绕，意思却清楚——物理约束正在替市场做一部分出清。建不成的数据中心，不会变成过剩产能。这跟单纯的需求萎缩是两回事。</p>
+<p>中国这边是反过来的。中国移动2027年算力投资超1000亿元，两年智算能力连续翻番，同时发布“智能网”，定位为网络化人工智能基础设施，称智能网是智能要素的“交换机”和“路由器”，目标是让AI能力像水电一样在网络里被调度。天数智芯天垓300完成真机实测，超节点方案下有效Token成本直降40%，测试重点是集群整体有效吞吐，不只是单卡跑分。台企在无锡开建AI算力高端电子基板材料研发制造总部，指向算力硬件供应链上的卡点。中际旭创说800G、1.6T订单需求仍将快速增长。Arm的季度营收展望符合预期，数据中心业务帮它抵御了智能手机市场的低迷。</p>
+<p>一边在给算力加政治约束，一边在给算力加资本杠杆。</p>
+<p>这不是简单的两国竞争叙事。它真正的含义是：全球AI算力的成本曲线，正在被政治和地理重新定价。美国的算力会变贵，因为电力、土地、审批、社区关系都在涨价。中国的算力会变便宜，因为国资在承担基础设施的资本开支，国产芯片在压推理成本。两条成本曲线一旦分叉，AI应用的产业分布就会跟着分叉——推理密集、成本敏感的业务会往成本低的地方走，靠近监管和客户的应用会留在成本高的地方。</p>
+<p>还有一条更慢的线不能漏。中科院物理所胡勇胜、谢飞团队以低成本的NaBF₄和ZrCl₆为前驱体，通过一步机械化学法制备出系列新型钠离子电池正极材料，把多步合成压缩为一步。这件事看起来离AI很远，其实在同一个成本方程里。算力的长期成本，一半取决于芯片，一半取决于电力；电力的成本，一半取决于发电，一半取决于储能。钠电工艺路径简化，是把储能成本往下压的方向之一。AI的尽头是能源，这句话今年被说滥了，但真正决定它成立与否的，是这类把工艺步骤从多步压成一步的脏活。</p>
+<p>一到三年会怎样？如果民主党真的把数据中心审批权拿住，美国AI公司的单位推理成本会系统性上移，这会加速它们把一部分训练和推理外迁，或者加速自建电力。如果《禁止人工智能法案》推进不顺，阻力就只是局部的、州层面的，数据中心会往电力便宜、监管宽松的州集中，全国总量未必下降，但地理分布会重排。中国这边，1000亿元投资能不能转化成有效智算供给，关键不在钱，在国产芯片的集群效率和调度软件。天数智芯那个40%的降本是在超节点方案下测出来的，超节点是系统工程，不是单卡性能，这条路方向对，但要观察规模化之后的稳定性。</p>
+<p>第三条线，是Agent从演示到干活之间那道沟。</p>
+<p>谷歌的一项研究说得很直白：工程类Agent在基准测试里91%的通过率，在真实环境中接近于0。研究认为，现有评测方法与真实工程任务的分布存在系统性偏差。这句话应该被所有做Agent的公司贴在墙上。它挑战的不是某一家产品，是整个行业普遍使用的宣传口径。</p>
+<p>同一天，360发布元认知模型，主打让AI从能生成走向可靠执行，元认知指模型对自身推理过程的监控与校正。这个方向切中了Agent落地最痛的点：不是会不会做，是做完敢不敢用。腾讯混元发布Hy4，官方称其Agent能力在开源模型中排名第一，因调用量激增已完成十倍扩容。百度开源文心5.5 Flash Base，称多个基准测试刷新同尺寸模型最优成绩。淘宝MNN开源一个0.3B参数的手机端模型，在iPhone 18 Pro上离线跑出350 token/s，完全本地运行，不依赖云端。</p>
+<p>把这几条放在一起看，竞争维度其实不是跑分。是三个东西：可靠性、单位成本、部署位置。Hy4讲的是调用量激增后的扩容能力，这是服务成本问题；文心讲同尺寸最优，这是性价比问题；淘宝MNN讲0.3B离线350 token/s，这是把推理从云端搬到端侧，直接消灭掉一部分云成本。国行苹果AI首批接入得物并开放测试，ChatGPT搜索量已达谷歌的20%，苹果股价大涨超6%、重返美股市值第一——这几条共同指向同一件事：入口在从搜索框和App图标，往系统级和端侧迁移。端侧小模型能用，是入口迁移的技术前提。</p>
+<p>而灵光2.0的数据提供了另一面：上线一周托管事务超116万项，用户突破2000万。所谓托管事务，指用户把原本要自己动手做的事交给AI代理去执行。一周沉淀百万量级的真实执行数据，这个价值不在2000万用户，在那116万项任务里包含的真实分布。谷歌说基准</p></div><div class=foot>洞见星空 · 仅供学习交流，不构成投资建议</div></div></body></html>
