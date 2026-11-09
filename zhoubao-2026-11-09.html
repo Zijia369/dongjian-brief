@@ -1,0 +1,151 @@
+<!doctype html><html lang=zh><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1,viewport-fit=cover'><meta name=theme-color content='#0b0614'><title>洞见星空周报 11月9日</title><style>
+:root{--bg:#0b0614;--bg2:#140b22;--card:#171021;--line:#2b1d3e;--acc:#c4b5fd;--gold:#c9a86a;--txt:#efeaf8;--dim:#a79fbb;--mut:#6f6784}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(900px 500px at 50% -160px,#2a1745 0%,var(--bg) 62%);
+color:var(--txt);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC",sans-serif;
+max-width:520px;margin:0 auto;padding:26px 18px 70px;background-attachment:fixed}
+.grid{position:fixed;inset:0;pointer-events:none;opacity:.045;
+background-image:linear-gradient(#c4b5fd 1px,transparent 1px),linear-gradient(90deg,#c4b5fd 1px,transparent 1px);
+background-size:44px 44px;z-index:0}
+.wrap{position:relative;z-index:1}
+.head{display:flex;align-items:center;gap:12px}
+.logo{width:46px;height:46px;border-radius:12px;object-fit:cover}
+.insight{margin-top:9px;padding:9px 12px;border-left:3px solid var(--gold);background:rgba(201,168,106,.05);border-radius:0 10px 10px 0;font-size:13.5px;color:#c9b8ff}
+.insight b,.insight .tag{color:var(--gold);font-weight:600}
+.term{display:flex;gap:10px;padding:12px 0;border-bottom:1px solid #241834}
+.term:last-child{border-bottom:none}
+.term .k{color:var(--gold);font-weight:600;white-space:nowrap}
+.term .v{color:#d8d0ea;font-size:13.5px}
+.kicker{font:600 11px/1 ui-monospace,SFMono-Regular,monospace;letter-spacing:4px;color:var(--gold);margin-bottom:14px}
+h1{font-size:30px;line-height:1.3;font-weight:800;letter-spacing:-.5px;
+background:linear-gradient(100deg,#fff,#c4b5fd 70%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--dim);font-size:13px;margin-top:8px}
+.lead{margin:18px 0 4px;padding:14px 16px;border:1px solid var(--line);border-radius:16px;
+background:linear-gradient(180deg,#1a1129,#120b1e);color:#cfc7e2;font-size:14px}
+.briefbox{margin:20px 0 6px;padding:16px 18px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(180deg,#161027,#10091c)}
+.briefbox .bt{font:600 11px/1 ui-monospace,monospace;letter-spacing:2px;color:var(--gold);margin-bottom:12px}
+.briefbox li{list-style:none;display:flex;gap:9px;font-size:15px;line-height:1.7;color:#ded7ee;margin-bottom:9px}
+.briefbox li:last-child{margin-bottom:0}
+.briefbox li::before{content:"";flex:0 0 6px;height:6px;border-radius:50%;background:var(--gold);margin-top:9px}
+h2{display:flex;align-items:center;gap:10px;font:600 11px/1 ui-monospace,monospace;
+letter-spacing:3px;color:var(--gold);margin:38px 0 16px}
+h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent)}
+.card{background:var(--card);border:1px solid rgba(201,168,106,.30);border-radius:18px;padding:17px 16px;margin-bottom:12px;
+box-shadow:0 1px 0 rgba(255,255,255,.03) inset}
+.card h3{font-size:17px;line-height:1.55;font-weight:650;margin-bottom:9px}
+.card p{color:#b9b2c9;font-size:14.5px}
+.why{margin-top:11px;padding:9px 12px;border-left:3px solid var(--gold);
+background:rgba(201,168,106,.08);border-radius:0 10px 10px 0;font-size:14px;color:#f2e56b}
+u{text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--gold)}
+.why .tag{color:var(--gold);font-weight:600}
+.why b.key{color:#fff;font-weight:600}
+.src-chip{font:600 10px/1 ui-monospace,SFMono-Regular,monospace;color:var(--gold);border:1px solid rgba(201,168,106,.55);border-radius:999px;padding:3px 7px;margin-left:6px;text-decoration:none;white-space:nowrap;vertical-align:middle}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.chip{font:600 11px/1 ui-monospace,monospace;color:var(--mut);border:1px solid var(--line);
+border-radius:999px;padding:5px 9px;text-decoration:none}
+.chip.acc{color:var(--gold);border-color:rgba(201,168,106,.35)}
+a.chip:active{background:rgba(196,181,253,.12)}
+a{color:#b9a6ff;text-decoration:none}
+.repo{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid #241834}
+.repo:last-child{border-bottom:none}
+.repo .n{font-size:14.5px;font-weight:600;color:#efeaf8;word-break:break-all}
+.repo .rec{color:#c9a86a;display:inline-block;margin-top:6px}
+.repo .d{font-size:12.5px;color:var(--dim);margin-top:3px;line-height:1.5}
+.repo .s{font:600 12px ui-monospace,monospace;color:var(--gold);white-space:nowrap}
+.money{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid #241834;font-size:14.5px}
+.money:last-child{border-bottom:none}
+.money b{color:var(--acc);font-variant-numeric:tabular-nums}
+.money span{color:var(--dim);font-size:12.5px}
+.todo li{list-style:none;padding:12px 0;border-bottom:1px solid #241834;font-size:14.5px;color:#cfc7e2}
+.todo li:last-child{border-bottom:none}
+.todo .d{display:inline-block;font:600 11px/1 ui-monospace,monospace;color:var(--acc);margin-right:8px}
+.teach{margin-top:10px;padding:10px 12px;border:1px dashed rgba(196,181,253,.35);border-radius:12px;font-size:13.5px;color:#d6ccf0}
+.teach .tag{color:var(--gold);font-weight:600}
+.teach b{color:#c4b5fd;font-weight:600}
+.foot{margin-top:44px;text-align:center;color:#5d5570;font-size:11px;letter-spacing:1.5px}
+
+body{background:#0a0712;background-attachment:fixed}
+.grid{opacity:.10}
+.article h2.next{color:#c4b5fd}
+.refs{margin-top:36px;padding-top:18px;border-top:1px solid #2b1d3e}
+.refs h2{color:#8f86a3;font-size:15px;border-left-color:#5a4a7a;letter-spacing:2px}
+.refs li{font-size:12.5px;line-height:1.7;color:#8f86a3;margin-bottom:6px}
+.refs li a{color:#8f86a3;text-decoration:underline;text-decoration-style:dotted}
+.article p{margin:0 0 15px;font-size:16.5px;line-height:1.9;color:#d9d2e8}
+.article .lead{margin:22px 0 30px;padding:16px 18px;border:1px solid rgba(201,168,106,.45);border-left:4px solid #d4af37;border-radius:14px;background:rgba(201,168,106,.07)}
+.article .lead p{margin:0;font-size:17.5px;line-height:1.85;color:#f3ecff}
+.article h2{margin:32px 0 13px;font-size:19px;color:#f0d98a;border-left:4px solid #d4af37;padding-left:12px}
+.article strong{color:#f0d98a;font-weight:600}
+.article ul{margin:0 0 18px 22px}
+.article li{margin-bottom:8px;font-size:16px;line-height:1.85;color:#d9d2e8}
+</style></head><body><div class=grid></div><div class=wrap><div class=kicker>DONGJIAN · WEEKLY</div><div class=head><img class=logo src='logo.png' alt=logo><h1>洞见星空周报</h1></div><div class=sub>2026-11-04 至 2026-11-09 · 本周 109 条 · 深读版</div><div class=article><div class=lead><p>这一周真正发生的事，是AI和内容同时进入算账期：资本不再为参数和规模买单，而为可交付结果、可核验成本、可追溯来源买单。OpenAI首笔融资110亿美元不及原计划一半[1]，Anthropic却花34亿美元买燃气发电[2]；微短剧的盗脸偷声被纳入治理[3]。钱还在投，但投向和门槛都变了。</p></div>
+<h2>AI从生成转向交付</h2>
+<p>灵光2.0上线一周托管事务超116万项、用户突破2000万[4]，闲鱼称Agent让150万用户获得持续稳定收入[5]。这说明AI的卖点正从“会回答”变成“替人做完一件事”。但谷歌研究给出冷水：工程Agent在基准测试里通过率91%，真实环境接近0[6]。差距不在演示，而在流程、权限和出错兜底。</p>
+<p>腾讯混元Hy4把Agent能力开源，调用量激增后十倍扩容[7]，说明需求真实，供给也在往执行层挤。市场从卖模型调用转向卖可验收任务；受益的是有场景数据、能兜底交付的团队，受损的是靠跑分营销的产品。企业层看，先写清“验收什么”比多加十个功能有用[8]。</p>
+<p>对我们的意味：内容和服务也要按结果拆小，先证明完成率，再谈规模。</p>
+<h2>模型层变成可替换件</h2>
+<p>领英替换部分OpenAI模型，把服务器成本维持持平[9]；虎鲸鲸锐AI平台一次集成超50个主流视频模型[10]。企业采购正从“选最强”转向“选最省、可切换”。开源在追：百度开源文心5.5 Flash Base，称在同尺寸模型多个基准刷新SOTA[11]；</p>
+<p>淘宝MNN开源0.3B手机模型，在iPhone 18 Pro离线跑出350 token/s[12]。端侧和开源一起压低调用价，运营商也把国产模型接入Token联合发展中心[13]。市场层面，中低端模型调用会继续商品化，受益的是应用层、私有化部署和集成服务，受损的是纯API转售。</p>
+<p>企业层看，业务、客户、产品、区域、组织都不该锁死在一家模型上；真正壁垒在数据、流程和用户关系。对我们的意味：保持可替换，价格战红利才吃得到。</p>
+<h2>算力瓶颈转向电力融资</h2>
+<p>美国中期选举后，民主党高层呼吁立即暂停全国数据中心建设[14]；微软被曝对押注“新云”渐生悔意，加强审查部分数据中心项目[15]。扩张的约束从芯片转向电力、许可和融资。道明证券预计2027年美国高评级债券供应创2.4万亿美元纪录，AI开支是主要推力[16]。融资端变重，谁有存量机房和并网能力谁占优。</p>
+<p>中国移动计划2027年算力投资超1000亿元、智算能力两年翻番[17]；中际旭创称主要客户订单已基本覆盖2027年全年[18]，说明有客户长约的上游仍紧。天数智芯天垓300实测称超节点有效Token成本直降40%[19]，效率提升又在抵消部分成本。</p>
+<p>行业层看，高杠杆新云最脆弱，电力富余地区和能提供闭环冷却的厂商受益。企业层看，可以把推理成本下降当假设，但别轻易自建重资产。对我们的意味：用算力做内容资产，不押算力本身。</p>
+<h2>机器人开始拼量产场景</h2>
+<p>京东称物理AI已规模化落地，竞争焦点转向算力、数据与场景[20]；睿尔曼W1支持50多台机器人集群作业[21]。机器人从单机演示走到产线协同。拓斯达发布工业双足人形机器人Star，双臂负载10公斤，面向工厂搬运分拣[22]；启元第10000台个人机器人下线，14天从5000台翻倍[23]。</p>
+<p>一边是工业交付，一边是个人出货，路线分开。中石油60%控股，与宇树、泛界合设机器人公司[24]，说明场景方要主导解决方案。Agility完成上市，行业估值尺子不止一把[25]。行业层看，有客户、有产线、有场景数据的本体厂先跑，只有Demo的团队会出清；</p>
+<p>家庭机器人出货快但毛利薄，技能和内容生态才是后续收入。企业层看，内容方不必造硬件，先做可被硬件调用的动作包和技能包。对我们的意味：把内容拆成机器人每天能用的单元。</p>
+<h2>内容竞争转向来源授权</h2>
+<p>红果免费短剧9月月活达4.3亿、同比增长81.8%[26]，供给和流量都很大；鲸锐AI平台集成超50个视频模型[10]，生成门槛继续下降。供给越多，来源越值钱。广电总局整治微短剧“盗脸”“偷声”，换名重播也纳入治理[3]；全球最大图库破产[27]，说明版权资产也会被重新定价。</p>
+<p>国风国潮服饰在海外热销，外国消费者专程来中国抢货[28]，文化符号有出口需求；ChatGPT搜索量已达谷歌20%[29]，可被引用、可追溯的内容更容易被入口调用。行业层看，内容市场从流量分配转向授权链和来源证明；受益的是持有真人授权、原创素材和清晰授权记录的团队，受损的是流水线改写。</p>
+<p>企业层看，把素材来源、授权范围、删除方式做成台账，成本低，出事时能自证。对我们的意味：先证明来源干净，再谈分发。</p>
+<h2>出海从卖货转向买位置</h2>
+<p>中生制药达成最高70亿美元对外授权，刷新国内BD交易纪录[30]；华新建材拟约16.42亿美元收购巴西CSN CIMENTOS 99.99%股权，标的约占巴西水泥21%市场份额[31]。一个卖权益，一个买位置，方向一致：从自己卖产品转向拿渠道和定价权。</p>
+<p>国潮服饰在海外热销，外国消费者专程来中国抢货[28]，是文化符号带来的需求；E-bike公司融资2亿元，把重心从通勤转向高价户外新品类[32]；湖南湘江新区出口清单出现文化新面孔[33]，文化产品开始进入外贸统计。行业层看，产品出口毛利薄，授权、并购和品牌符号能提高议价；</p>
+<p>有跨境融资能力的头部受益，本地中小厂商承压。企业层看，先找现成渠道、联运方和授权对象，比从零起号快。对我们的意味：把内容打包成可授权的IP，而不是只卖单次服务。</p>
+<h2>AI入口转向系统与端侧</h2>
+<p>国行苹果AI首批接入得物，11月4日开放测试[34]，系统级AI开始直接调用第三方应用。入口不再只是App图标。ChatGPT搜索量已达谷歌20%[29]，搜索和问答在分流；淘宝MNN开源0.3B手机模型，在iPhone 18 Pro离线跑出350 token/s[12]，端侧小模型进入可用阶段；</p>
+<p>Epic重组团队押注空间智能，争夺底层协议权[35]；灵光2.0一周托管超116万项事务[4]，Agent也在抢执行入口。行业层看，入口会向系统、搜索、硬件和Agent集中，受益的是系统整合方和结构化内容库，受损的是靠App推送和SEO低质页面的产品。</p>
+<p>企业层看，业务、客户、产品、区域、组织都要适配“被调用”：动作名、时长、禁忌、进阶关系先变成字段。对我们的意味：内容先结构化，等入口出现时不临时改造。</p>
+<h2 class=next>下周看什么</h2>
+<ul><li>OpenAI剩余融资是否完成，以及Anthropic上市募资规模是否缩水。</li>
+<li>美国数据中心暂停呼声是否进入立法或审批，微软审查是否落到具体项目。</li>
+<li>开源模型与端侧模型的调用价格是否继续下探，企业多模型比价是否扩散。</li>
+<li>机器人量产爬坡能否延续，工业场景订单与家庭机器人内容生态谁先起量。</li>
+<li>微短剧授权治理细则是否落地，平台是否把来源证明写成发布前置条件。</li>
+</ul><div class=refs><h2>引用</h2>
+<ul><li><a href="https://www.qbitai.com/2026/11/508344.html">1｜2026-11-09｜OpenAI新融资到账110亿美元，不及原计划一半｜量子位</a></li>
+<li><a href="https://finance.sina.com.cn/7x24/2026-11-08/doc-inixzxsn6844439.html">2｜2026-11-09｜Anthropic斥资34亿美元为数据中心采购燃气发电设备｜新浪财经</a></li>
+<li><a href="https://www.ifanr.com/1688251">3｜2026-11-09｜广电总局整治微短剧“盗脸”“偷声”，换名重播也在治理范围｜爱范儿</a></li>
+<li>4｜2026-11-05｜灵光2.0上线一周托管超116万项事务，用户突破2000万｜新浪科技</li>
+<li>5｜2026-11-05｜闲鱼CEO谌伟业：Agent创造新模式新体验，150万用户获得持续稳定收入｜未标注</li>
+<li><a href="https://www.leiphone.com/category/ai/YZ0bP2vh94KY45RG.html">6｜2026-11-06｜谷歌最新研究：工程Agent基准91%通过率，真实环境接近0｜雷锋网</a></li>
+<li><a href="https://www.chinanews.com.cn/cj/2026/11-06/10727122.shtml">7｜2026-11-06｜腾讯混元正式发布Hy4，Agent能力开源模型第一，调用量激增已十倍扩容｜中新网财经</a></li>
+<li><a href="https://finance.sina.com.cn/stock/2026-11-08/doc-inixzxss7037099.shtml">8｜2026-11-09｜告别“聊天机器人”：AI商业化如何完成业务闭环？｜新浪国际</a></li>
+<li>9｜2026-11-04｜领英替换部分OpenAI模型，维持服务器成本持平｜未标注</li>
+<li>10｜2026-11-04｜虎鲸文娱鲸锐AI平台上线，集成超50个主流视频模型｜未标注</li>
+<li><a href="https://www.leiphone.com/category/industrynews/XOv7MDFAP99kUMEW.html">11｜2026-11-06｜百度开源文心5.5 Flash Base，多基准测试刷新同尺寸模型SOTA｜雷锋网</a></li>
+<li><a href="https://www.ithome.com/1/023/212.htm">12｜2026-11-06｜淘宝MNN开源0.3B手机模型，iPhone 18 Pro离线跑出350 token/s｜IT之家</a></li>
+<li><a href="https://www.ithome.com/1/023/937.htm">13｜2026-11-09｜中国移动云公司与智谱签约，共建Token联合发展中心｜IT之家</a></li>
+<li><a href="https://finance.sina.com.cn/stock/usstock/c/2026-11-06/doc-inixttce5171077.shtml">14｜2026-11-06｜美国中期选举后民主党高层呼吁“立即暂停全国数据中心建设”｜新浪科技</a></li>
+<li><a href="https://finance.sina.com.cn/stock/usstock/c/2026-11-06/doc-inixtnvn9139462.shtml">15｜2026-11-06｜微软对押注“新云”渐生悔意，正加强审查部分数据中心项目｜新浪科技</a></li>
+<li><a href="https://wallstreetcn.com/livenews/3196263">16｜2026-11-07｜道明证券预计 2027 年美国高评级债券供应将创 2.4 万亿美元纪录，AI 开支是主要推力｜华尔街见闻</a></li>
+<li><a href="https://www.ithome.com/1/023/197.htm">17｜2026-11-06｜中国移动2027年算力投资超1000亿元，智算能力两年连续翻番｜IT之家</a></li>
+<li><a href="https://wallstreetcn.com/livenews/3195576">18｜2026-11-06｜中际旭创：主要客户订单已基本覆盖2027年全年，部分客户给出2028年指引｜华尔街见闻</a></li>
+<li>19｜2026-11-05｜天数智芯天垓300真机实测：性能赶超国际主流GPU，超节点有效Token成本直降40%｜新浪科技</li>
+<li>20｜2026-11-04｜京东：物理AI已规模化落地，竞争焦点转向算力、数据与场景｜未标注</li>
+<li>21｜2026-11-04｜睿尔曼发布W1自拣选机器人，支持50多台集群作业｜未标注</li>
+<li><a href="https://www.jiemian.com/article/15308313.html">22｜2026-11-09｜拓斯达发布工业双足人形机器人Star，双臂负载10公斤｜界面新闻</a></li>
+<li><a href="http://finance.eastmoney.com/news/1354,202611083925673794.html">23｜2026-11-09｜启元机器人第10000台个人机器人下线，14天从5000台翻倍｜东方财富</a></li>
+<li><a href="https://www.tmtpost.com/8197535.html">24｜2026-11-09｜中石油60%控股，与宇树、泛界合设机器人公司｜钛媒体</a></li>
+<li><a href="https://www.tmtpost.com/8195331.html">25｜2026-11-06｜人形机器人公司Agility完成上市，行业估值尺子不止一把｜钛媒体</a></li>
+<li>26｜2026-11-05｜QuestMobile报告：9月红果免费短剧月活跃用户规模达4.3亿，同比增长81.8%｜未标注</li>
+<li><a href="https://www.tmtpost.com/8195601.html">27｜2026-11-06｜全球最大图库破产，前世界首富的孙子在该资产上损失700亿美元｜钛媒体</a></li>
+<li>28｜2026-11-05｜圈粉全球！国风国潮服饰海外热销，老外专程来抢货｜中新网</li>
+<li><a href="http://www.geekpark.net/news/373427">29｜2026-11-06｜ChatGPT搜索量已达谷歌20%，国行版苹果AI开始测试｜极客公园</a></li>
+<li>30｜2026-11-05｜达成最高70亿美元对外授权，中生制药刷新BD交易记录｜新浪科技</li>
+<li><a href="http://finance.eastmoney.com/news/1349,202611083925630892.html">31｜2026-11-09｜华新建材拟约16.42亿美元收购巴西CSN CIMENTOS 99.99%股权｜东方财富</a></li>
+<li><a href="https://www.leiphone.com/category/weiwu/ozMqvnoWJ6l3FAhl.html">32｜2026-11-08｜融资2亿 这家E-bike公司押注户外新品类｜雷锋网</a></li>
+<li><a href="https://www.chinanews.com.cn/cj/2026/11-06/10727680.shtml">33｜2026-11-07｜走进湖南湘江新区：出口清单上的文化新面孔｜中新网财经</a></li>
+<li>34｜2026-11-05｜国行苹果AI首批接入得物，11月4日开放测试｜未标注</li>
+<li><a href="https://www.tmtpost.com/8194347.html">35｜2026-11-06｜Epic重组团队全面押注AI，争夺“空间智能”时代的底层协议权｜钛媒体</a></li></ul></div></div><div class=foot>洞见星空 · 仅供学习交流，不构成投资建议</div></div></body></html>
